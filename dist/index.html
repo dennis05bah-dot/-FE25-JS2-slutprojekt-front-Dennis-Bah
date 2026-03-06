@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrum Board</title>
+  <script type="module" crossorigin src="/assets/index--KaS_Stw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-m7Y-h64l.css">
+</head>
+
+<body>
+
+<div id="app">
+
+<h1>Scrum Board</h1>
+
+<button id="loadBtn">Ladda uppgifter</button>
+
+<h2>Lägg till medlem</h2>
+<input id="memberName" placeholder="Namn">
+<select id="memberRole">
+<option>Player</option>
+<option>Coach</option>
+<option>Physio</option>
+</select>
+<button id="createMember">Skapa medlem</button>
+
+<h2>Lägg till uppgift</h2>
+<input id="title" placeholder="Titel">
+<input id="description" placeholder="Beskrivning">
+<select id="category">
+<option>Player</option>
+<option>Coach</option>
+<option>Physio</option>
+</select>
+<button id="createAssignment">Skapa uppgift</button>
+
+<div style="display:flex; gap:40px; margin-top:30px">
+
+<div>
+<h2>New</h2>
+<ul id="newList"></ul>
+</div>
+
+<div>
+<h2>Doing</h2>
+<ul id="doingList"></ul>
+</div>
+
+<div>
+<h2>Done</h2>
+<ul id="doneList"></ul>
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
